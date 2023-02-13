@@ -16,8 +16,19 @@ public class StringLoops {
     return newWord;
 
   }
+
+  public static void indexesOfAll(String str, String searchTerm){
+    int[] value = new int [] {};
+    int index = 0;
+    for(index = 0; index <= str.length();index ++){
+      if(str.substring(index, index + 1) .equals(searchTerm)){
+        value[index] = index;
+      }
+    }
+    
+  }
   public static void main(String[] args) {
-    System.out.println(reverseCharacters("radar"));
+    System.out.println(reverseCharacters("taco cat"));
     // testing of static methods goes here
 
   }
