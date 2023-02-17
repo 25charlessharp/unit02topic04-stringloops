@@ -57,7 +57,7 @@ public class StringLoops {
     int start = 0;
     for(index = 0; index < str2.length(); index++){
       if(str2.substring(index, index + 1).equals(" ")){
-        backword = str2.substring(start, index) + ""+ backword;
+        backword = str2.substring(start, index) + backword;
         start = index;
       }
     }
